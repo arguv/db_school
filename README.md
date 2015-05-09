@@ -1,27 +1,29 @@
-
-Select and recieve datum about students.
-
-***CREATE MySQL Database or import from forlder DB***
-
-host = "localhost";
-username = "root";
-password = "";
-db_name = "db_school";
+**Select and recieve datum about students.**
+========================================
+CREATE MySQL Database or import from forlder DB
+-----------------------------------------------
+host = "localhost"  
+username = "root"  
+password = ""  
+db_name = "db_school"  
 
 table "students"
-column:
-    "student_id"(PRIMARY KEY)
-    "student_fname"
-    "student_lname"
-================
+----------------
+columns:    
+1."student_id"(PRIMARY KEY)  
+2."student_fname"  
+3."student_lname"  
+
 table "classes"
-column:
-    "class_id"(PRIMARY KEY)
-    "class_name"
-    "student_id"(FOREIGN KEY)
-================
+---------------
+columns:  
+1."class_id"(PRIMARY KEY)  
+2."class_name"  
+3."student_id"(FOREIGN KEY)  
+
 table "subjects"
-column:
-    "subject_id"(PRIMARY KEY)
-    "subject_name"
-    "student_id"(FOREIGN KEY)
+----------------
+columns:  
+1."subject_id"(PRIMARY KEY)  
+2."subject_name"  
+3."student_id"(FOREIGN KEY)  
